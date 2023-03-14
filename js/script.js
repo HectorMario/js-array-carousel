@@ -14,10 +14,12 @@ let i = 0;
 giu.addEventListener("click", function(){
     i += 1;
     document.getElementById("xd").src= pictur[i]
+    document.getElementById("se").src= pictur[i]
     console.log(i);
     if (i > pictur.length - 1){
         i= 0
         document.getElementById("xd").src= pictur[i]
+        document.getElementById("se").src= pictur[i]
     }
 })
 
@@ -25,10 +27,12 @@ giu.addEventListener("click", function(){
 su.addEventListener("click", function(){
     i -= 1;
     document.getElementById("xd").src= pictur[i]
+    document.getElementById("se").src= pictur[i]
     console.log(i);
     if (i < 0){
         i  = pictur.length - 1;
         document.getElementById("xd").src= pictur[i]
+        document.getElementById("se").src= pictur[i]
     }
 })
 
